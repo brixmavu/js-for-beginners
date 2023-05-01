@@ -1,0 +1,70 @@
+<h1>Objects</h1>
+
+<p> In programming, an object is a collection of related data and functions that can be accessed and manipulated as a single entity. Objects are a fundamental concept in many programming languages, including JavaScript.
+</p>  
+
+<p>An object in JavaScript is defined using curly braces {} and can contain one or more key-value pairs. Each key-value pair consists of a property name and its corresponding value, separated by a colon. The property name is a string, while the value can be any data type, including other objects.
+</p> 
+<p>Here is an example of an object in JavaScript:</p> 
+
+<pre>
+    <code>
+    let person = {
+        name: "John",
+        age: 30,
+        address: {
+            street: "123 Main St",
+            city: "Anytown",
+            state: "CA"
+        }
+    };
+    </code>
+</pre>
+
+<p>In this example, person is an object that has three properties: name, age, and address. The address property is itself an object that has three properties: street, city, and state.
+</p> 
+<p>You can access the properties of an object using dot notation or bracket notation. For example:</p> 
+
+<pre>
+    <code>
+    console.log(person.name); // Output: "John"
+    console.log(person["age"]); // Output: 30
+    console.log(person.address.city); // Output: "Anytown"
+    </code>
+</pre>
+
+<p>You can also add or modify properties of an object using dot notation or bracket notation. For example:</p> 
+
+<pre>
+    <code>
+    person.job = "Software Engineer";
+    person["salary"] = 100000;
+    console.log(person.job); // Output: "Software Engineer"
+    console.log(person.salary); // Output: 100000
+    </code>
+</pre>
+
+<p>You can also define methods on an object, which are functions that are part of the object. For example:
+</p> 
+<pre>
+    <code>
+    let person = {
+    name: "John",
+    age: 30,
+    address: {
+        street: "123 Main St",
+        city: "Anytown",
+        state: "CA"
+    },
+    sayHello: function() {
+        console.log("Hello, my name is " + this.name);
+    }
+    };
+    </code>
+</pre>
+
+<pre><code>person.sayHello(); // Output: "Hello, my name is John"</code></pre>
+
+<p>In this example, sayHello is a method of the person object that logs a greeting to the console using the name property of the object.
+</p> 
+<p>Objects are a powerful tool in programming that allow you to organize and manipulate data in a structured way. By understanding how to create and work with objects, you can write more flexible and efficient code.</p> 
